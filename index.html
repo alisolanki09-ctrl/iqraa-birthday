@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Iqraa Jii 🫀🙂‍↕️🫠🫂</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{
+  width:100%;height:100%;
+  background:linear-gradient(180deg,#071a3d,#020b22);
+  color:white;
+  font-family:'Montserrat',sans-serif;
+  overflow:hidden;
+}
+
+/* FIREWORKS */
+#fireworks{
+  position:fixed;
+  inset:0;
+  z-index:999;
+  pointer-events:none;
+  display:none;
+}
+
+/* FLOATING HEARTS */
+.fx span{
+  position:absolute;
+  top:-40px;
+  animation:fall linear infinite;
+  opacity:.7;
+}
+.fx span::before{content:"💖"}
+@keyframes fall{
+  from{transform:translateY(-10vh)}
+  to{transform:translateY(120vh)}
+}
+
+/* PAGES */
+.page{
+  position:absolute;
+  inset:0;
+  padding:24px;
+  text-align:center;
+  opacity:0;
+  transform:scale(1.02);
+  transition:.6s ease;
+  pointer-events:none;
+}
+.page.active{
+  opacity:1;
+  transform:scale(1);
+  pointer-events:auto;
+}
+.scroll-page{
+  overflow-y:auto;
+  padding-bottom:160px;
+}
+
+/* TEXT */
+.hero{
+  font-family:'Great Vibes',cursive;
+  font-size:clamp(2.6rem,7vw,3.6rem);
+  margin-top:40px;
+}
+.sub{
+  margin-top:14px;
+  font-size:1.1rem;
+  font-weight:600;
+}
+.countdown{
+  margin:20px 0;
+  font-size:1.3rem;
+  font-weight:700;
+}
+
+/* IMAGES */
+.hero-img{
+  width:clamp(220px,75vw,280px);
+  max-width:100%;
+  height:auto;
+  margin:26px auto 18px;
+  display:block;
+  border-radius:26px;
+  box-shadow:0 0 25px rgba(255,120,180,.7),0 0 55px rgba(255,120,180,.9);
+  animation:imgGlow 3s infinite alternate;
+}
+@keyframes imgGlow{
+  from{box-shadow:0 0 20px rgba(255,120,180,.6)}
+  to{box-shadow:0 0 60px rgba(255,120,180,1)}
+}
+
+/* BUTTON */
+.btn{
+  display:block;
+  margin:26px auto 0;
+  padding:16px 38px;
+  border:none;
+  border-radius:45px;
+  background:linear-gradient(135deg,#ff7eb3,#ff758c);
+  color:white;
+  font-size:1.05rem;
+  font-weight:700;
+  cursor:pointer;
+}
+.fixed-btn{
+  position:absolute;
+  bottom:30px;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+/* LETTER */
+.letter{
+  background:rgba(255,255,255,.97);
+  color:#111;
+  border-radius:24px;
+  padding:32px;
+  max-width:520px;
+  margin:80px auto 0;
+  font-family:'Playfair Display',serif;
+  font-size:1.25rem;
+  font-weight:700;
+  line-height:1.8;
+}
+
+/* VIDEO */
+.video-link{
+  margin-top:140px;
+}
+.video-link a{
+  display:inline-block;
+  padding:18px 34px;
+  border-radius:50px;
+  background:linear-gradient(135deg,#ff7eb3,#ff758c);
+  color:white;
+  font-size:1.15rem;
+  font-weight:700;
+  text-decoration:none;
+}
+
+/* FLOW */
+.flow{
+  margin-top:40px;
+  max-width:720px;
+  margin-inline:auto;
+}
+.flow-box{
+  background:rgba(255,255,255,.97);
+  color:#111;
+  border-radius:18px;
+  padding:20px;
+  margin:18px 0;
+  font-family:'Playfair Display',serif;
+  font-size:1.2rem;
+  font-weight:700;
+  line-height:1.6;
+}
+
+/* FINGERPRINT */
+.fp{
+  margin-top:120px;
+  font-size:5rem;
+}
+.fp-text{
+  margin-top:18px;
+  font-size:1.35rem;
+  font-weight:700;
+}
+
+/* FINAL */
+.final-text{
+  font-family:'Great Vibes',cursive;
+  font-size:clamp(2.3rem,6vw,3rem);
+  margin-top:60px;
+}
+</style>
+</head>
+
+<body>
+
+<canvas id="fireworks"></canvas>
+<div class="fx"></div>
+
+<script>
+const fx=document.querySelector(".fx");
+for(let i=0;i<24;i++){
+  const s=document.createElement("span");
+  s.style.left=Math.random()*100+"%";
+  s.style.animationDuration=14+Math.random()*10+"s";
+  fx.appendChild(s);
+}
+</script>
+
+<!-- PAGE 1 -->
+<div class="page active" id="p1">
+  <div class="hero">Happy Birthday Iqraa Jii 🫀🙂‍↕️🫠🫂</div>
+  <div class="sub">The love of my life 💌💍</div>
+  <div class="countdown" id="countdown"></div>
+  <img src="IMG_4046.PNG" class="hero-img">
+  <button class="btn" onclick="go(2)">Please Click Myy Darling 💕🙂‍↕️</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="p2">
+  <div class="letter">
+    Veryyyyyy Veryyy Happyyy Birthdayyy 🎂💖🫂<br><br>
+    To the girl who makes me complete,<br>
+    My peace, my home, my world <br>
+    My friend, my best friend, my wife <br><br>
+    <b>YOU — MY IQRAA JII ❤️🥹🫠💌💍</b>
+  </div>
+  <button class="btn fixed-btn" id="p2btn" style="display:none" onclick="go(3)">
+    Please proceed myy Iqraa Jii ❤️💗
+  </button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="p3">
+  <div class="hero">Pleasee Click on the link Myy Madamm Jii</div>
+  <div class="video-link">
+    <a href="https://drive.google.com/file/d/1q3cQNouLyS2Z_UTg91t_L7LZCT9PQT6C/view?usp=sharing" target="_blank">
+      Click here to watch your surprise 💖🫠
+    </a>
+  </div>
+  <button class="btn fixed-btn" onclick="go(4)">Click here Meri Malkinn Jii 💞😋</button>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page scroll-page" id="p4">
+  <div class="hero">Our Precious Memories 💖💌👥</div>
+  <div class="flow">
+    <div class="flow-box">1️⃣ First sight at the gate — my better half stood before me🫀🫠.</div>
+    <div class="flow-box">2️⃣ Second meet again at the gate — lost admiring my Iqraa Jii🫠❣️.</div>
+    <div class="flow-box">3️⃣ Your call "Leke Jaao Mereko" — felt like pure emotions😋👥.</div>
+    <div class="flow-box">4️⃣ First hug — felt heaven in my arms😭🫂.</div>
+    <div class="flow-box">5️⃣ Tulsi ke patte — rose & first forehead kiss💌❤️‍🩹.</div>
+    <div class="flow-box">6️⃣ Craving dayyy — first star on your cheek❣️💎.</div>
+    <div class="flow-box">7️⃣ Apology day — love won💖🫂.</div>
+    <div class="flow-box">8️⃣ Secret goal — achieved together😋🙂‍↕️.</div>
+    <div class="flow-box">9️⃣ Meeting in your room — unforgettable😭💌🫂.</div>
+    <div class="flow-box">🔟 Last meet before Odisha — always in heart🌍💍.</div>
+    <button class="btn" onclick="go(5)">My Birthday Girl, Please Click ❤️🎀</button>
+  </div>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page" id="p5">
+  <div class="hero">Fingerprint Verification 🖐️</div>
+  <div class="fp">🖐️</div>
+  <div class="fp-text" id="fpText">Scanning your thumb…</div>
+  <button class="btn fixed-btn" id="fpBtn" style="display:none" onclick="go(6)">
+    Please Proceed Myy Forever 💖💍
+  </button>
+</div>
+
+<!-- PAGE 6 -->
+<div class="page" id="p6">
+  <div class="final-text">
+    Once again…<br>
+    Happyyyy Birthdayyyy Iqraa Jii 💕🫠🫶🫂
+  </div>
+  <img src="IMG_3858.PNG" class="hero-img">
+  <div class="sub" style="margin-top:26px">
+    I loveeeee youuuu sooooo muchhhh ❤️🫀🫂<br>
+    Always & Forever Myy Iqraa Jii ♾️💌
+  </div>
+</div>
+
+<script>
+function go(n){
+  document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
+  document.getElementById("p"+n).classList.add("active");
+
+  if(n===2){
+    p2btn.style.display="none";
+    setTimeout(()=>p2btn.style.display="block",10000);
+  }
+
+  if(n===5){
+    fpText.innerText="Scanning your thumb…";
+    fpBtn.style.display="none";
+    setTimeout(()=>{
+      fpText.innerText="Congratulations Madam ❤️💍👥 You & Mee are registered for happily ever after 🥹";
+      fpBtn.style.display="block";
+    },10000);
+  }
+
+  if(n===6) startFireworks();
+}
+
+/* COUNTDOWN */
+const countdown=document.getElementById("countdown");
+const target=new Date("January 18, 2026 00:00:00").getTime();
+
+setInterval(()=>{
+  const d=target-Date.now();
+  if(d>0){
+    countdown.innerText=
+      `${Math.floor(d/3600000)}h ${Math.floor(d/60000)%60}m ${Math.floor(d/1000)%60}s left`;
+  }else{
+    countdown.innerText="It’s Iqraa Jii’s Special Day 🎉💖";
+  }
+},1000);
+
+/* FIREWORKS */
+function startFireworks(){
+  const c=document.getElementById("fireworks");
+  const ctx=c.getContext("2d");
+  c.width=innerWidth;c.height=innerHeight;
+  c.style.display="block";
+  const start=Date.now();
+  function fw(){
+    ctx.clearRect(0,0,c.width,c.height);
+    for(let i=0;i<7;i++){
+      ctx.beginPath();
+      ctx.arc(Math.random()*c.width,Math.random()*c.height,3,0,6.28);
+      ctx.fillStyle=`hsl(${Math.random()*360},100%,60%)`;
+      ctx.fill();
+    }
+    if(Date.now()-start<10000) requestAnimationFrame(fw);
+    else c.style.display="none";
+  }
+  fw();
+}
+</script>
+
+</body>
+</html>
